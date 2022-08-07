@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans&display=swap');
+
+*, html, body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+/* h2{
+    margin: 0 auto;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+} */
+
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+    margin: 0 auto;
+    color: white;
+}
+
+.container h2{
+    margin: 2vh;
+    font-weight: bold;
+    font-size: medium;
+    text-align: center;
+}
+
+.date{
+    font-size: 3vh;
+    font-weight: medium;
+}
+
+.clock{
+    font-size: 5vh;
+    font-weight: bold;
+}
+
+.clock #pe{
+    font-size: 2vh;
+    font-weight: bold;
+}
