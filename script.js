@@ -27,19 +27,25 @@ function updateClock(){
     }
     
     // simplify hours num and change color
-    if (hrs>=6 && hrs<=12){
+    if (hrs>6 && hrs<=12){
         document.body.style.backgroundColor="rgb(0, 134, 184)";
+        content.forEach(container => {
+            container.style.color = 'rgb(255,255,255)';
+        })
         greetings.innerHTML = "Good Morning!<br/>Have a great day!"
-    } else if(hrs>12 && hrs<18){
+    } else if(hrs>12 && hrs<=18){
         hrs -= 12;
         document.body.style.backgroundColor="rgb(204, 204, 0)";
         content.forEach(container => {
             container.style.color = 'rgb(0,0,0)';
         })
         greetings.innerHTML = "Good Afternoon!<br/>Your day isn't over yet. Keep spirit!"
-    } else if(hrs>=18 && hrs<6){
+    } else{
         hrs -= 12;
         document.body.style.backgroundColor="rgb(0, 0, 0)";
+        content.forEach(container => {
+            container.style.color = 'rgb(255,255,255)';
+        })
         greetings.innerHTML = "Good Evening!<br/>Don't forget to sleep buddy"
     }
 
