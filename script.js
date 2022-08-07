@@ -27,10 +27,10 @@ function updateClock(){
     }
     
     // simplify hours num and change color
-    if (hrs>=6 && hrs<12){
+    if (hrs>=6 && hrs<=12){
         document.body.style.backgroundColor="rgb(0, 134, 184)";
         greetings.innerHTML = "Good Morning!<br/>Have a great day!"
-    } else if(hrs>=12 && hrs<18){
+    } else if(hrs>12 && hrs<18){
         hrs -= 12;
         document.body.style.backgroundColor="rgb(204, 204, 0)";
         content.forEach(container => {
